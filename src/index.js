@@ -1,1 +1,3 @@
-alert("hi");
+import { loadPage } from "./load.js";
+
+loadPage();
