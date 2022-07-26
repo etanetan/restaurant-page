@@ -39,6 +39,7 @@ const homePage = (() => {
   // add homepage image, copy, and menu button
   // hero to house all hero information
   let hero = document.createElement("div");
+  hero.id = "heroPage";
   hero.classList.add("hero");
 
   // overlay for image

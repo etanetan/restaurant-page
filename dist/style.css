@@ -62,10 +62,6 @@ body {
     gap: 1rem;
 }
 
-.hero.hide {
-    display: none;
-}
-
 .overlay {
     position: absolute;
     /*background-color: rgba(226, 226, 226, 0.7);*/
