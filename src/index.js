@@ -1,22 +1,25 @@
-import { homePage } from "./home.js";
-// function
-function tabSwitch(pageClicked) {
-  // gather variables for each page
-  let hero = document.getElementById("heroPage");
-  if (pageClicked == "homeTab") {
-    hero.style.display = "flex";
-    hero.classList.remove("hide");
-  } else if (pageClicked == "menuTab") {
-    hero.style.display = "none";
-  } else {
-    hero.style.display = "none";
-  }
-}
+import { createContactTab } from "./contact.js";
+import { createHomepage } from "./homepage.js";
+import { createMenuTab } from "./menu.js";
 
-document.querySelectorAll(".navbarLink").forEach((link) =>
-  link.addEventListener("click", function () {
-    tabSwitch(link.id);
-  })
-);
+// Get a reference to the page content
+const content = document.getElementById("content");
 
-homePage();
+// Generate the homepage on page load
+document.addEventListener("DOMContentLoaded", () => {
+  createHomepage(content);
+});
+
+// Switch to the Contact page when clicked
+const contactTab = document.getElementById("contact-tab");
+contactTab.addEventListener("click", () => {
+  content.innerHTML = "";
+  createContactTab(content);
+});
+
+// Switch to the Menu page when clicked
+const menuTab = document.getElementById("menu-tab");
+menuTab.addEventListener("click", () => {
+  content.innerHTML = "";
+  createMenuTab(content);
+});

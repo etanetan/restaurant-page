@@ -1,104 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-
 body {
-    font-family: 'Varela Round', sans-serif;
-    overflow-x: hidden;
-    margin: 0;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-/* STYLING FOR OVERALL CONTENT */
 #content {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    min-height: 100vh;
+  width: 960px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-/* HIDE PAGE WHEN NOT ON CORRECT TAB*/
-.hide {
-    display: none;
+h1 {
+  text-align: center;
+  margin: 20px 0;
 }
 
-/* STYLING FOR THE NAVBAR */
-.navbar {
-    flex: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 10vw;
-    padding-right: 10vw;
-    background-color: #FFF188;
+h2 {
+  margin: 20px 0;
 }
 
-.navLeftText {
-    color: red;
+img {
+  width: 100%;
 }
 
-.navbarLinks {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 3rem;
-    color: black;
-}
-
-.navbarLink:hover {
-    cursor: pointer;
-    color: red;
-}
-
-/* STYLING FOR HOME PAGE HERO */
-.hero {
-    flex: 1;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 30vh;
-    padding-bottom: 30vh;
-    margin: 0 0 0 0;
-    background-image: url('../images/pizzaImage.jpg');
-    gap: 1rem;
-}
-
-.overlay {
-    position: absolute;
-    /*background-color: rgba(226, 226, 226, 0.7);*/
-    background-color: rgba(0, 0, 0, .7);
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.heroText {
-    position: relative;
-    z-index: 1;
-    color: red;
-    font-weight: bold;
-    margin: 0 0 0 0;
-}
-
-.heroText.heroHeader {
-    font-size: 2rem;
-}
-
-.heroText.heroButton {
-    color: white;
-    background-color: red;
-}
-   
 button {
-    font-family: inherit;
-    cursor: pointer;
-    background-color: transparent;
-    border: 1px solid transparent;
-    border-radius: 3rem;
-    font-size: 16px;
-    padding: .5rem 1.5rem .5rem 1.5rem;
+  display: inline-block;
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
 }
 
 button:hover {
-    border: 1px solid red;
+  background-color: lightgrey;
+}
+
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  background-color: #333;
+  color: #fff;
+}
+
+nav a {
+  padding: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  line-height: 50px;
+}
+
+nav a:hover {
+  background-color: #444;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  color: #333;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+p {
+  margin: 20px 0;
+  line-height: 1.5;
 }
